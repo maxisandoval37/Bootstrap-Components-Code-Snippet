@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            
+            <h1><a href="https://getbootstrap.com/docs/5.0/components/accordion/" target="_blank" class="text-decoration-none">Acordeon ←</a></h1>
+            <!--START BOOSTRAP COMPONENT-->
+            <div class="accordion" id="ejemploAcordeon">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button data-bs-toggle="collapse" data-bs-target="#elemento1acordeon"
+                                class="accordion-button">
+                            Elemento 1
+                        </button>
+                    </h2>
+                    <div id="elemento1acordeon" class="accordion-collapse collapse show"
+                         data-bs-parent="#ejemploAcordeon">
+                        <div class="accordion-body">
+                            Este es el contenido del primer elemento.
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button data-bs-toggle="collapse" data-bs-target="#elemento2acordeon"
+                                class="accordion-button">
+                            Elemento 2
+                        </button>
+                    </h2>
+                    <div id="elemento2acordeon" class="accordion-collapse collapse"
+                         data-bs-parent="#ejemploAcordeon">
+                        <div class="accordion-body">
+                            Este es el contenido del segundo elemento.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END BOOSTRAP COMPONENT-->
+
+        </main>
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>

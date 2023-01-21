@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            
+            <h1><a href="https://getbootstrap.com/docs/5.0/components/modal/" target="_blank" class="text-decoration-none">Modal ←</a></h1>
+            <!--START BOOSTRAP COMPONENT-->
+            <!--Botón abre modal-->
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ejemploModal">
+                Abrir modal
+            </button>
+
+            <!--Modal-->
+            <div class="modal fade" id="ejemploModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Título del modal</h5>
+                            <button type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Este es un pequeño formulario</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END BOOSTRAP COMPONENT-->
+
+        </main>
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>

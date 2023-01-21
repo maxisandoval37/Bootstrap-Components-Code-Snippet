@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+    
+            <h1><a href="https://getbootstrap.com/docs/5.0/components/alerts/" target="_blank" class="text-decoration-none">Alertas ←</a></h1>
+            <!--START BOOSTRAP COMPONENT-->
+            <button onclick="mostrarAlertaExitoso()" class="btn btn-primary">Mostra alerta exitoso</button>
+            <button onclick="mostrarAlertaError()" class="btn btn-danger">Mostra alerta de error</button>
+    
+            <div>
+                Las alertas se van a mostrar áca
+            </div>
+    
+            <div id="contenedor-alertas">
+            </div>
+    
+            <script>
+                function mostrarAlertaExitoso() {
+                    mostrarAlerta('Este es un mensaje exito', 'success');
+                }
+
+                function mostrarAlertaError() {
+                    mostrarAlerta('Este es un mensaje de error', 'danger');
+                }
+
+                function mostrarAlerta(mensaje, tipo) {
+                    const alerta = document.createElement("div");
+                    alerta.innerHTML = `<div class="alert alert-${tipo}" role="alert"> ${mensaje}</div>`;
+                    const contenedorAlertas = document.getElementById('contenedor-alertas');
+                    contenedorAlertas.append(alerta)
+                }
+            </script>
+            <!--END BOOSTRAP COMPONENT-->
+
+        </main>
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>

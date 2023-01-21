@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            
+            <h1><a href="https://getbootstrap.com/docs/5.0/content/tables/" target="_blank" class="text-decoration-none">Tablas ←</a></h1>
+            <!--START BOOSTRAP COMPONENT-->
+            <table class="table table-striped table-hover table-sm" aria-describedby="mi tabla">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Maxi</td>
+                        <td>Sandoval</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>2</td>
+                        <td>Pedro</td>
+                        <td>Fernandez</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">Carlos González</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--END BOOSTRAP COMPONENT-->
+
+        </main>
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>
