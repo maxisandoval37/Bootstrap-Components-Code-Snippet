@@ -35,7 +35,8 @@
 
                 function mostrarAlerta(mensaje, tipo) {
                     const alerta = document.createElement("div");
-                    alerta.innerHTML = `<div class="alert alert-${tipo}" role="alert"> ${mensaje}</div>`;
+                    const buttonClose = '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
+                    alerta.innerHTML = `<div class="alert alert-${tipo}" role="alert"> ${mensaje} ${buttonClose}</div>`;
                     const contenedorAlertas = document.getElementById('contenedor-alertas');
                     contenedorAlertas.append(alerta)
                 }
