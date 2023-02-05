@@ -74,6 +74,16 @@ Podemos especificar según el tipo de pantalla:
 </ul>
 
 <h3>
+  <a href="https://getbootstrap.com/docs/5.0/utilities/flex/">Alineación:</a>
+</h3>
+<ul>
+ <li>justify-content-center</li>
+ <li>justify-content-start</li>
+ <li>justify-content-end</li>
+ <li>...</li>
+</ul>
+
+<h3>
   <a href="https://getbootstrap.com/docs/5.0/components/badge/">Badge:</a>
 </h3>
 Útiles para contener elementos aplicando estilos.
