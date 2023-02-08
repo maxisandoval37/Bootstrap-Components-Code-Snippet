@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            
+            <h1><a href="https://getbootstrap.com/docs/5.0/components/offcanvas/" target="_blank" class="text-decoration-none">Menu Lateral (offcanvas)←</a></h1>
+            <!--START BOOSTRAP COMPONENT-->
+            <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#idEjOffcanvas">
+                Abrir menu
+            </button>
+
+            <!--
+                offcanvas-end: Coloca el menú a la derecha
+                offcanvas-start: Coloca el menú a la derecha
+                offcanvas-top: Coloca el menú arriba
+                offcanvas-bottom: Coloca el menú abajo
+            -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="idEjOffcanvas">
+                <div class="offcanvas-header">
+                    <h4 class="offcanvas-title">Titulo</h4>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magnam sapiente eos aperiam ea repellendus minus excepturi, possimus, explicabo consequuntur quos nulla nam quam voluptate maiores ullam. Maxime, temporibus libero.
+                    </p>
+                </div>
+            </div>
+            <!--END BOOSTRAP COMPONENT-->
+
+        </main>
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>
