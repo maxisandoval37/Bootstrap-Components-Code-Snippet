@@ -1,7 +1,7 @@
-<h1>Bootstrap 5 Components Code Snipped</h1>
+<h1>Bootstrap 5 Components Code Snippet</h1>
 
 <h2>
-  <a href="https://maxisandoval37.github.io/Bootstrap-Components-Code-Snipped/Index.html">Live demo</a>
+  <a href="https://maxisandoval37.github.io/Bootstrap-Components-Code-Snippet/Index.html">Live demo</a>
 </h2>
 
 <h1 align="center">Notas</h1>
