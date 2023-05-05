@@ -15,6 +15,16 @@
  <li>container-{breakpoint}: ancho 100% hasta llegar al breakpoint</li>
 </ul>
 
+<h3>
+  <a href="https://getbootstrap.com/docs/5.0/utilities/float/">Float:</a>
+</h3>
+Útiles para alinear elementos hacia la izquierda o hacia la derecha.
+<ul>
+ <li>float-start</li>
+ <li>float-end</li>
+ <li>float-none</li>
+</ul>
+
 <h3>Grid:</h3>
 <ul>
  <li>El máximo de columnas que tenemos disponibles son 12.</li>
