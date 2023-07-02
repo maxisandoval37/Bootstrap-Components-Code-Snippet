@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/lib/bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            
+            <h1><a href="https://icons.getbootstrap.com/" target="_blank" class="text-decoration-none">CustomSwitch ←</a></h1>
+            <!--START BOOSTRAP COMPONENT-->
+            <button type="button" class="btn btn-secondary btn-lg" id="toggleBtn">
+                <i class="bi bi-toggle2-off"></i>
+            </button>
+            <label class="form-check-label" for="toggleBtn" style="color: gray">No/Si</label>
+              
+            <script>
+                <!--Script para el switch-->
+                const toggleBtn = document.getElementById('toggleBtn');
+                let isToggled = false;
+            
+                toggleBtn.addEventListener('click', () => {
+                    isToggled = !isToggled;
+                    toggleBtn.innerHTML = isToggled ? '<i class="bi bi-toggle2-on"></i>' : '<i class="bi bi-toggle2-off"></i>';
+                    
+                    toggleBtn.classList.toggle('btn-secondary', !isToggled);
+                    toggleBtn.classList.toggle('btn-success', isToggled);
+                    
+                    console.log(`Boton ${isToggled ? 'activado' : 'desactivado'}`);
+                });
+            </script>            
+            <!--END BOOSTRAP COMPONENT-->
+
+        </main>
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>
